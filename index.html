@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badger's Philippines Weather System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,..." />
+    <meta name="theme-color" content="#1e3a8a" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <i class="fas fa-cloud-sun logo"></i>
+        <h1>Badger's Weather System</h1>
+        <div class="location-info">
+          <i class="fas fa-map-marker-alt"></i>
+          <span id="currentLocation">Metro Manila</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-container">
+      <div class="perfect-search">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Search City" />
+        </div>
+        <button id="searchBtn" class="perfect-search-btn">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      <button id="geoBtn" class="geo-btn">
+        <i class="fas fa-location-arrow"></i> My Location
+      </button>
+    </div>
+
+    <div class="weather-container">
+      <div class="loading" id="loading">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Loading weather...</p>
+      </div>
+
+      <div class="current-weather" id="currentWeather">
+        <div class="weather-main">
+          <div class="temp-container">
+            <span class="temp" id="temp">28°</span>
+            <span class="unit">C</span>
+          </div>
+          <div class="weather-icon">
+            <i class="fas fa-cloud-sun" id="weatherIcon"></i>
+          </div>
+          <h2 id="cityName">Metro Manila</h2>
+          <p class="description" id="description">Partly cloudy</p>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail-item">
+            <i class="fas fa-tint"></i>
+            <span>Humidity</span>
+            <span id="humidity" class="value">75%</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-wind"></i>
+            <span>Wind</span>
+            <span id="wind" class="value">4.2 m/s</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-eye"></i>
+            <span>Visibility</span>
+            <span id="visibility" class="value">10 km</span>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-thermometer-half"></i>
+            <span>Feels Like</span>
+            <span id="feelsLike" class="value">30°</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-banner" id="typhoonAlert" style="display: none">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span id="alertText">🌀 TCWS No. 1 active in your area</span>
+      </div>
+    </div>
+
+    <div class="forecast-section">
+      <h3><i class="fas fa-clock"></i> Next 12 Hours</h3>
+      <div class="hourly-scroll" id="hourlyForecast"></div>
+    </div>
+
+    <div class="forecast-section">
+      <h3><i class="fas fa-calendar"></i> 5-Day Forecast</h3>
+      <div class="daily-forecast" id="dailyForecast"></div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

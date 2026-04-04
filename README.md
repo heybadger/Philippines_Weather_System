@@ -70,10 +70,10 @@ Philippines_Weather_System/
 MIT License - Free to use anywhere!
 
 ## 🙌 **Acknowledgments**
-Font Awesome - Free icons
-PAGASA - PH weather authority
+Font Awesome for Free icons
+PAGASA for PH weather authority
 
 ## ⚖️ **Legal Disclaimer** 
-> Educational demo using **mock weather data**.  
-> Not affiliated with PAGASA/OpenWeatherMap.  
-> No real data collection. For learning only.
+| Educational demo using **mock weather data**.  
+| Not affiliated with PAGASA/OpenWeatherMap.  
+| No real data collection. For learning only.

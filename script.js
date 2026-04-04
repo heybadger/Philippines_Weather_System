@@ -1,4 +1,4 @@
-class PinoyWeatherApp {
+class Badger {
     constructor() {
       this.phLocations = {
         'manila': { name: 'Metro Manila', lat: 14.5995, lon: 120.9842, temp: 29, humidity: 78 },

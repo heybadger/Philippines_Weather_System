@@ -137,5 +137,3 @@ If you like this project:
 - Share it with others 🚀
 
 ---
-
-# 🇵🇭 Made for Filipinos with ❤️

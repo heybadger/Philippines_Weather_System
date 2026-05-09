@@ -1,79 +1,141 @@
-# 🌿 **Badger's Weather System** - Philippines Weather App
+# 🌤️ Tibo Weather App
 
-[![GitHub stars](https://img.shields.io/github/stars/heybadger/Philippines_Weather_System?style=social)](https://github.com/heybadger/Philippines_Weather_System)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![PWA](https://img.shields.io/badge/PWA-Ready-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+[![Status](https://img.shields.io/badge/Status-Active-success)]()
+[![Made For](https://img.shields.io/badge/Made%20For-Philippines-blue)]()
+[![OpenWeatherMap](https://img.shields.io/badge/API-OpenWeatherMap-orange)]()
 
-**Badger's Weather System** is a **beautiful, fully responsive weather app** designed specifically for the **Philippines**. Features real-time weather, typhoon alerts, and forecasts for major PH cities with a **stunning green Philippines theme**.
+> A modern weather application focused on the Philippines, featuring real-time weather data, hourly forecasts, and smart location search with a clean responsive interface.
 
-## ✨ **Features**
+![Tibo Weather Preview](images/weather-preview.png)
 
-- **🇵🇭 Philippines Optimized** - Manila, Cebu, Davao, Baguio & more
-- **📱 Fully Responsive** - Perfect on mobile, tablet, desktop
-- **🌤️ Real-time Weather** - Current temp, humidity, wind, visibility
-- **⏰ Hourly Forecast** - Next 12 hours
-- **📅 5-Day Forecast** - Daily high/low temps
-- **🚨 Typhoon Alerts** - TCWS notifications
-- **🔍 Smart Search** - Type city name (manila, cebu, etc.)
-- **📍 Geolocation** - Auto-detect your location
-- **🌿 Green PH Theme** - Beautiful gradient design
-- **⚡ PWA Ready** - Install to home screen
-- **🚀 No API Key** - Works offline after first load
+## ✨ Features
 
-## 📱 **Demo**
+- 🌦️ **Real-Time Weather** - Live weather updates using OpenWeatherMap API
+- 📍 **Geolocation Support** - Instantly check weather in your current location
+- 🔎 **Smart PH Search** - Search provinces, cities, municipalities, and tourist spots
+- ⚠️ **Weather Alert System** - Detects thunderstorms, heavy rain, strong winds, and typhoon-related conditions
+- ⏱️ **Hourly Forecast** - View upcoming weather changes for the next hours
+- 📅 **5-Day Forecast** - Extended weather predictions with temperature ranges
+- 📱 **Responsive Design** - Works smoothly on desktop, tablet, and mobile
+- 🎨 **Modern UI** - Soft pastel weather-inspired interface with rounded cards and clean spacing
 
-![PinoyWeather Demo](https://via.placeholder.com/1200x600/059669/ffffff?text=PinoyWeather+Demo)
+## 🛠️ Built With
 
-## 🚀 **Quick Start**
+- **HTML5** - Semantic structure and layout
+- **CSS3** - Responsive styling and modern UI design
+- **Vanilla JavaScript** - Weather logic, API fetching, and dynamic rendering
+- **Font Awesome 6.5.2** - Icons for weather conditions and UI elements
+- **OpenWeatherMap API** - Real-time weather and forecast data
 
-### **Live Demo**
-[👉 Try it live here](https://heybadger.github.io/Philippines_Weather_System/)
+## 📁 Project Structure
 
-### **1. Download & Open**
 ```bash
-# Clone repo
-git clone https://github.com/heybadger/Philippines_Weather_System.git
-cd Philippines_Weather_System
+tibo-weather-app/
+│
+├── index.html        # Main HTML structure
+├── style.css         # Weather app styling
+├── script.js         # API handling and app logic
+├── images/           # Screenshots / assets
+│   └── weather-preview.png
+└── README.md         # Documentation
 ```
 
-# Just open in browser!
-# Double-click index.html ✅
+## 🚀 Getting Started
 
-1. Type "manila" → Enter
-2. Or "cebu", "davao", "baguio"
-3. Click "My Location" 📍
-4. Install as PWA (Chrome menu)
+### 1. Clone the repository
 
-```
-Philippines_Weather_System/
-├── index.html     # Main app
-├── style.css      # Green theme
-├── script.js      # Weather logic
-└── README.md      # This file
+```bash
+git clone https://github.com/yourusername/tibo-weather-app.git
 ```
 
-## 📍 Try cities:
-- manila    → Metro Manila (29°C)
-- cebu      → Cebu City (31°C)  
-- davao     → Davao City (32°C)
-- baguio    → Baguio City (22°C)
-- iloilo    → Iloilo City (30°C)
-- quezon    → Quezon City (28°C)
+### 2. Open the project
 
-## 📱 **PWA Installation**
-- Open in Chrome/Edge
-- Click Install in address bar
-- Add to home screen ✅
-- Works offline!
+Open `index.html` in your browser.
 
-## 📄 **License**
-MIT License - Free to use anywhere!
+## 🔑 API Setup
 
-## 🙌 **Acknowledgments**
-Font Awesome for Free icons
-PAGASA for PH weather authority
+This project uses the OpenWeatherMap API.
 
-## ⚖️ **Legal Disclaimer** 
-| Educational demo using **mock weather data**.  
-| Not affiliated with PAGASA/OpenWeatherMap.  
-| No real data collection. For learning only.
+Get your free API key here:
+
+https://openweathermap.org/api
+
+Replace the API key inside `script.js`:
+
+```js
+const API_KEY = "YOUR_API_KEY";
+```
+
+## 🇵🇭 Supported Locations
+
+The app contains a large built-in list of Philippine locations including:
+
+- Provinces
+- Cities
+- Municipalities
+- Tourist destinations
+
+### Examples
+
+- Manila
+- Quezon City
+- Cebu
+- Davao City
+- Baguio
+- Boracay
+- Siargao
+- Palawan
+
+## ⚠️ Alert System
+
+The app automatically shows weather advisories for dangerous conditions.
+
+### Current Alerts
+
+- ⛈️ Thunderstorms
+- 🌧️ Heavy Rain
+- 🌪️ Strong Winds
+- 🌀 Typhoon Conditions
+
+## 🧠 Smart Features
+
+### Province → Capital Conversion
+
+Some provinces automatically map to their capital city for better weather search accuracy.
+
+### Example
+
+```txt
+Palawan → Puerto Princesa
+Aklan → Kalibo
+Benguet → Baguio
+```
+
+## 🔮 Future Improvements
+
+- 🌙 Dark Mode
+- 🌡️ Celsius/Fahrenheit Toggle
+- 🗺️ Weather Radar Maps
+- 📡 PAGASA Integration
+- 🔔 Push Notifications
+- 🌧️ Rain Probability Indicator
+
+## 👨‍💻 Author
+
+Created by **Badger**
+
+## 📜 License
+
+This project is open-source and free to use.
+
+## ⭐ Support
+
+If you like this project:
+
+- Star the repository ⭐
+- Fork the project 🍴
+- Share it with others 🚀
+
+---
+
+# 🇵🇭 Made for Filipinos with ❤️
